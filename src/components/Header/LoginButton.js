@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import firebase from 'firebase'
+import { UserAuthContext } from '../../App'
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp({
@@ -13,7 +14,7 @@ if (firebase.apps.length === 0) {
 }
 
 function LoginButton() {
-  const [user, setUser] = useState(null)
+  const { user, setUser } = useContext(UserAuthContext)
   const clickHandler = () => {
     if (user) {
       setUser(null)
@@ -29,7 +30,7 @@ function LoginButton() {
       backgroundImage: `url("${user.photoURL}")`,
       backgroundSize: "cover"
     }
-    : { }
+    : {}
   return (
     <button
       style={style}
