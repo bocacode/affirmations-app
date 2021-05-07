@@ -1,0 +1,35 @@
+.navbar-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 48px !important;
+  color: white !important;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+button {
+  width: 36px;
+  height: 36px;
+}
+
+.login-button {
+  background: rgba(255,255,255,.20);
+  color: #808080;
+  border: 1px solid #808080;
+  border-radius: 50%;
+}
+.login-button:hover {
+  background: #ff216e;
+  color: white;
+  border-color: white;
+}
+
+.add-button {
+  background: rgba(255,255,255,.20);
+  color: #808080;
+  border: 1px solid #808080;
+  border-radius: 50%;
+}
+.add-button:hover {
+  background: #ff9f21;
+  color: white;
+  border-color: white;
+}

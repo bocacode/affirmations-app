@@ -13,7 +13,7 @@ firebase.initializeApp({
 function LoginButton() {
   const [user, setUser] = useState(null)
   const clickHandler = () => {
-    if(user) {
+    if (user) {
       setUser(null)
     } else {
       const provider = new firebase.auth.GoogleAuthProvider()
@@ -22,8 +22,21 @@ function LoginButton() {
         .catch(err => alert(err))
     }
   }
+  const style = (user)
+    ? {
+      backgroundImage: `url("${user.photoURL}")`,
+      backgroundSize: "cover"
+    }
+    : {
+
+    }
   return (
-    <button onClick={() => clickHandler()}>#</button>
+    <button
+      style={style}
+      className="login-button"
+      onClick={() => clickHandler()}>
+      {user ? '' : '#'}
+    </button>
   )
 }
 

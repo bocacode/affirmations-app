@@ -1,0 +1,14 @@
+.card-columns {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+.card-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+}
