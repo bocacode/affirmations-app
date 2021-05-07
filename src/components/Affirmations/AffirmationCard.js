@@ -15,14 +15,16 @@ function AffirmationCard({ affirmation }) {
         <Card.Body>
           <Card.Text>
             <Media>
+              <Media.Body>
+                {affirmation.displayName}
+              </Media.Body>
               <Image
                 roundedCircle
+                width="36"
+                height="36"
                 src={affirmation.photoUrl}
                 alt={affirmation.displayName}
               />
-              <Media.Body>
-                <p>{affirmation.displayName}</p>
-              </Media.Body>
             </Media>
           </Card.Text>
         </Card.Body>

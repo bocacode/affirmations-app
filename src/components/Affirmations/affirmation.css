@@ -12,3 +12,8 @@
   font-family: 'Dancing Script', cursive;
   font-size: 32px;
 }
+
+.media-body {
+  color: #666;
+  font-style: italic;
+}
