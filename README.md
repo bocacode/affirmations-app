@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Simple Affirmations App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+See a [working demo](https://affirm-bc.web.app).
+
+Login with Google. Post an affirmation.
 
 ## Available Scripts
 
