@@ -21,7 +21,7 @@ function Affirmations() {
         {!affirmationsList ? (<Spinner animation="border" role="status">
           <span className="sr-only">Loading...</span>
         </Spinner>) : affirmationsList.map(one => {
-          return <AffirmationCard affirmation={one} />
+          return <AffirmationCard key={one.id} affirmation={one} />
         })}
       </Row>
     </CardColumns>

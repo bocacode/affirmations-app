@@ -4,6 +4,18 @@ See a [working demo](https://affirm-bc.web.app).
 
 Login with Google. Post an affirmation.
 
+## To install libraries
+
+Run `yarn`
+
+## To run
+
+Run `yarn start`
+
+## To deploy
+
+Run `yarn deploy`
+
 ## Available Scripts
 
 In the project directory, you can run:
